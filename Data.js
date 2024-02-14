@@ -1,6 +1,5 @@
-const data=(req,res)=>{
-    res.send(
-[
+
+const data =  [
 
     //home
 
@@ -24,63 +23,32 @@ const data=(req,res)=>{
            "caption4":"Golden Triangle With Amritsar"
         }
       },
-      
-
-
-
-
-
-
-
-
       {
         "id":"2",
         "category":"home",
         "title": "Rajastan",
         "desc":" bring you a complete collection of one of a kind tour packages. After all, it is not just a state, it is the pride of its bygone rulers and the joy in the voice of people who say...PADHARO MARE DESH..   The desire to catch the floating bubbles of culture, traditions, history and its royalty never ends, but travelers can at least start from somewhere with our Rajasthan tour Packages. Enjoy  ",
-        
-      
         "reviews": [],
-    
         "photo": "https://www.theindiatourism.com/images/rajasthanpackages.webp",
     },
-
-
-
-
-      {
+    {
         "id":"3",
         "category":"home",
         "title": "Kerala",
-       
         "desc":"Kerala tour packages which have been tailored to various themes and specialties so as to suit you whether you are planning a family holiday in Kerala, a spa break in some of the best Ayurveda retreats in India or whether you are looking for a beautiful beginning with romantic honeymoon tour packages. Kerala tour packages offered by the india tourism includes Hill station packages, houseboat packages, wildlife century packages, back water and beach packages. These packages start at very reasonable rates and can hike up to the level of your comfort. We can also design custom Kerala tour packages by understanding your taste, budget and comfort and includes one of the most famous places to visit in Kerala, the india tourism comes in the category of standard Kerata tour operator that assures you to experience the same adventure and joy that seems in the brochures or over websites. Kerala tour of the india tourism covers vast range of destination and provide one day tour packages to one month packages. The most popular Kerala packages includes hill station & houseboat package and hill station, houseboat & beach Kerala package",
-            
-       
-    
         "photo": "https://www.theindiatourism.com/images/keralatour.webp",
       },
-
-
-
-
       {
         "id":"4",
         "category":"home",
         "title": "Goa",
-        
         "desc": "Goa tour packages help you cherish memorable holidays in Goa amidst the swaying palms, white sands & sparkling waters, Savor delicious cuisines, enjoy the vibrant nightlife and just let go of yourself with the characteristic susegad vibe. Practice yoga and meditation or rejuvenate yourself with therapeutic spa sessions at one of the fine luxury hotels in Goa. With our Goa holiday packages, you can visit popular beaches of Goa. churches and temples. Goa family tour and Goa honeymoon package can be made unforgettable by exploring the beautiful beaches of Goa and by tasting the amazing seafood cuisine of Goa. Enjoy your honeymoon on the sandy beaches or witness a party spirit at beaches. The magical charm of Goa ties in each one of its aspect, be it the endless sea, incredible landscapes, spicy sea food. Baga beach is a popular spot for water sports. Baga beach market features stalls selling handicrafts and textiles. Baga is known for tong and sandy beach in Goa. Some other popular beaches of God is Calangute, Anjuna, Colva, Vagator, Candolim, Agonda, Dona Paula, Panaji etc. The period from October to March is very pleasant for tourists travelting to Goa. During this period the sea condition remains normat and its good for swimming and water sports.",
-      
         "photo": "https://www.theindiatourism.com/images/Goatour.webp",
       },
-
-
-
       {
         "id":"5",
         "category":"home",
         "title": "Kerla2",
-       
-    
         "photo": "https://www.theindiatourism.com/images/Kerala.webp",
       },
       {
@@ -88,32 +56,24 @@ const data=(req,res)=>{
         "id":"6",
         "category":"home",
         "title": "Tajmahal",
-       
-    
         "photo": "https://www.theindiatourism.com/images/taj-mahal-tour.webp",
       },
       {
         "id":"7",
         "category":"home",
         "title": "Varanasi",
-       
-    
         "photo": "https://www.theindiatourism.com/images/varanasi-tour.webp",
       },
       {
         "id":"8",
         "category":"home",
         "title": "Khajuraho",
-       
-    
         "photo": "https://www.theindiatourism.com/images/Khajuraho-tours.webp",
       },
       {
         "id":"9",
         "category":"home",
-        "title": "Jaypur",
-       
-    
+        "title": "Jaipur",
         "photo": "https://www.theindiatourism.com/images/Jaipur-tour.webp",
       
       },
@@ -121,10 +81,7 @@ const data=(req,res)=>{
         "id":"10",
         "category":"home",
         "title": "Mumbai",
-       
-    
         "photo": "https://www.theindiatourism.com/images/mumbai-tour.webp",
-     
       },
 
 
@@ -135,10 +92,7 @@ const data=(req,res)=>{
         "id":"11",
         "category":"package",
         "title": "Golden Triangel Tour",
-       
-    
         "photo": "https://www.theindiatourism.com/images/golden-triangle-tours.jpg",
-     
       },
 
       {
@@ -1211,6 +1165,7 @@ const data=(req,res)=>{
         "category":"crousal",
         "title": "Varanasi",
         "photo": "https://www.theindiatourism.com/images/varanasi-tour.webp",
-      },])}
+      }
+    ]
 
 module.exports = {data}

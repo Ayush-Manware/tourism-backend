@@ -1,18 +1,32 @@
-const data = [
-    {
-        "id":1,
-        "name":"Jaipur",
-        "state":"Rajasthan",
-        "image":" ",
-        "place-one":"Hawa Mahal",
-        "place-one-image":" ",
-        "place-two":"Nahargarh Fort",
-        "place-two-image":" ",
-        "place-three":"City Palace",
-        "place-three-image":" ",
-        "place-four":"Birla Mandir Temple",
-        "place-four-image":" ",
-        "place-five":"Jaigarh Fort",
-        "place-five":""
-    }
-]
+const express = require("express") 
+const data = require("./Data")
+
+const app = express()
+
+app.get("/",(req, res)=>{
+    res.send(data)
+})
+
+app.get("/Indian-Tourism",(req, res)=>{
+    res.send("Indian Tourism Page")
+})
+
+app.get("/Places-To-Visit",(req, res)=>{
+    res.send("Places To Visit Route")
+})
+
+app.get("/Tour-Packages",(req, res)=>{
+    res.send("Tour Packages Routes")
+})
+
+app.get("/Tour-Offers",(req, res)=>{
+    res.send("Tour Offers Route")
+})
+
+app.get("/Contact-Us",(req, res)=>{
+    res.send("Contact us Route")
+})
+
+app.listen(1100,()=>{
+    console.log("Server Started")
+})
