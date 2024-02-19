@@ -1,16 +1,16 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-mongoose.set("strictQuery",true);
+mongoose.set("strictQuery", true);
 
-const mongocloudURL="mongodb+srv://ayushmanware19:Ayush@2001@tourism-cluster.nxfb2tc.mongodb.net/?retryWrites=true&w=majority"
+const mongocloudURL = "mongodb+srv://ayushmanware2001:Axb3Li538e9RPf2f@clustertour.sk9u7ua.mongodb.net/tour-database?retryWrites=true&w=majority";
 
-const Connection=async ()=>{
-    try{
+const Connection = async () => {
+    try {
         await mongoose.connect(mongocloudURL);
         console.log("Connected Successfully");
+    } catch (err) {
+        console.error("Something went wrong in the connection process:", err);
     }
-    catch(err){
-        console.log("something wrong in connection process:",err)
-    }
-}
-module.exports={Connection}
+};
+
+module.exports = { Connection };
