@@ -1,32 +1,26 @@
-const express = require("express") 
-const data = require("./Data")
+const express = require('express');
+const { routes } = require('./Routes');
 
-const app = express()
 
-app.get("/",(req, res)=>{
-    res.send(data)
-})
+const app = express();
+const cors = require('cors');
+const { Connection } = require('./config/db');
 
-app.get("/Indian-Tourism",(req, res)=>{
-    res.send("Indian Tourism Page")
-})
+app.use(cors({
+    origin:"*"
+}))
 
-app.get("/Places-To-Visit",(req, res)=>{
-    res.send("Places To Visit Route")
-})
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
+app.use('/api',routes)
 
-app.get("/Tour-Packages",(req, res)=>{
-    res.send("Tour Packages Routes")
-})
-
-app.get("/Tour-Offers",(req, res)=>{
-    res.send("Tour Offers Route")
-})
-
-app.get("/Contact-Us",(req, res)=>{
-    res.send("Contact us Route")
-})
-
-app.listen(1100,()=>{
-    console.log("Server Started")
-})
+app.listen(1100,async()=>{
+    try{
+         Connection();
+        console.log("server is running at port 1100")
+    }
+    catch(err){
+        console.log("Server Crashed")
+    }
+ })
+ 
